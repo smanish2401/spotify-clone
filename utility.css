@@ -1,0 +1,11 @@
+.border{
+    border: 2px solid#121212;
+    margin: 5px;
+    border-radius: 10px;
+}
+.flex{
+    display: flex;
+}
+.justify-content{
+    justify-content: center;
+}
