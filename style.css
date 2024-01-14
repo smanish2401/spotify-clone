@@ -17,6 +17,8 @@
 }
 .home{
     margin: 20px;
+    padding: 15px;
+    border-radius: 10px;
 }
 
  .home ul li{
@@ -28,8 +30,13 @@
     margin: 15px 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 700;
+    
 }
 .bg-black{
+background-color: black;
+}
+
+.bg-grey{
     background-color: #121212;
     color:white;
 }
