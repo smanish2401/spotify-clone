@@ -1,45 +1,48 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.body{
-    background-color: black;
+body{
+    /*background-color: black;*/
 }
 
 .left{
     width: 25vw;
-  
+  padding:7px;
     
 }
 .right{
     width: 75vw;
     
 }
-.home{
-    margin: 20px;
-    padding: 15px;
-    border-radius: 10px;
-}
+
+
 
  .home ul li{
-    width: 25px;
+    width: 24px;
     list-style: none;
     display: flex;
     align-items: center;
     gap: 15px;
-    margin: 15px 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 17px;
+   
+   
     font-weight: 700;
     
 }
-.bg-black{
-background-color: black;
-}
 
-.bg-grey{
-    background-color: #121212;
-    color:white;
-}
+
 .invert{
     filter: invert(1);
+}
+.heading{
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+.heading img{
+    width: 24px;
 }

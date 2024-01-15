@@ -1,7 +1,7 @@
 .border{
     border: 2px solid#121212;
-    margin: 5px;
-    border-radius: 10px;
+   
+    
 }
 .flex{
     display: flex;
@@ -9,3 +9,20 @@
 .justify-content{
     justify-content: center;
 }
+.bg-black{
+    background-color: black;
+    }
+    
+    .bg-grey{
+        background-color: #121212;
+        color:white;
+    }
+    .rounded{
+        border-radius: 8px;
+    }
+    .m-1{
+        margin: 5px;
+    }
+    .p-1{
+          padding: 20px;;
+    }
