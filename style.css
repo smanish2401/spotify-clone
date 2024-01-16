@@ -4,12 +4,14 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 body{
-    /*background-color: black;*/
+    background-color: black;
+    color: white;
 }
 
 .left{
     width: 25vw;
   padding:7px;
+  
     
 }
 .right{
@@ -39,10 +41,43 @@ body{
 .heading{
     font-weight: 700;
     display: flex;
-    align-items: center;
+    width: 100%;
+   align-items: center;
     gap: 15px;
     
+  
+    
+}
+.library{
+    min-height: 55vh;
+    position: relative;
 }
 .heading img{
     width: 24px;
+}
+.footer{
+    
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-weight: 500;
+    font-size: 11px;
+}
+.footer a{
+    
+   
+    color: grey;
+    text-decoration: none;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.nav svg{
+    background-color:rgba(0,0,0,.7);
+    opacity: .6;
+    padding: 7px;
+    border-radius: 50%;
 }
