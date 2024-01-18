@@ -50,16 +50,19 @@ body{
     
 }
 .library{
+    
     min-height: 58vh;
     position: relative;
 }
+
+
 .heading img{
     width: 24px;
 }
 .footer{
     
     position: absolute;
-    bottom: 0;
+    bottom: 15px;
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
@@ -75,7 +78,7 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
-    background-color:rgb(34, 34,34);
+    background-color:#090909;
 }
 .header > *{
     padding: 15px;
@@ -96,11 +99,11 @@ body{
     
 }
 .sg-btn{
-    background-color:rgb(34,34,34);
+    background-color:#090909;;
     color: rgb(168, 162, 162);
     padding: 15px;
-    border: 1px solid rgb(34,34,34);
-    border-radius: 30px;
+    border: 1px solid #090909;;
+    
     font-weight: 700;
     font-size: 15px;
     
@@ -109,17 +112,22 @@ body{
     padding: 15px;
 }
 .card-container{
-    width:150px;
+    margin: 10px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.card{
     margin-top: 15px;
     padding:15px;
-    background-color: #1e1e1e;
-}
-.card{
+    width:150px;
     display: flex;
     flex-direction: column;
-   
+    background-color: #1e1e1e;
     gap: 12px;
     justify-content: center;
+    position: relative;
    
    
 }
@@ -130,8 +138,18 @@ body{
 }
 .card img{
    
-    width: 150px;
+    width: 100%;
     object-fit: contain;
     border-radius: 7px;
 }
+.play svg{
+    background-color: #1fdf64;
+    padding: 12px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 105px;
+    right: 24px;
+    
+}
+
  
