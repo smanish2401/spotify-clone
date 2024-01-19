@@ -17,6 +17,7 @@ body{
 .right{
     width: 75vw;
     margin: 14px 0;
+    position: relative;
     
 }
 
@@ -144,6 +145,10 @@ body{
    
    
 }
+.card:hover{
+    background-color: #282828
+}
+
 .card p{
     color: rgb(170, 164, 164);
     font-size: 14px;
@@ -167,9 +172,20 @@ body{
 .play svg:hover{
     opacity: 1;
 }
-.card:hover{
-    background-color: #282828
+.playBar{
+    padding:10px 0 ;
+    position: absolute;
+   
+    bottom: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
 }
-
-
+.playbtn{
+    background-color:white;
+    padding: 8px;
+    border-radius:50%;
+}
  
