@@ -89,6 +89,8 @@ body{
     padding: 7px;
     border-radius: 50%;
 }
+
+
 .lg-btn{
     background-color: white;
     padding: 13px 32px ;
@@ -96,7 +98,11 @@ body{
     border-radius: 30px;
     font-size: 15px;
     font-weight: 700;
+    cursor: pointer;
     
+}
+.lg-btn:hover{
+    font-size: 16px;
 }
 .sg-btn{
     background-color:#090909;;
@@ -106,22 +112,29 @@ body{
     
     font-weight: 700;
     font-size: 15px;
-    
+    cursor: pointer;
+}
+.sg-btn:hover{
+    font-size: 15.2px;
+    color: white;
+   
 }
 .spotifyPlaylist{
     padding: 15px;
 }
 .card-container{
-    margin: 10px;
+    margin: 15px;
     display: flex;
-    gap: 15px;
+    gap: 25px;
     flex-wrap: wrap;
+    max-height: 60vh;
+    overflow:auto;
 }
 
 .card{
     margin-top: 15px;
     padding:15px;
-    width:150px;
+    width:170px;
     display: flex;
     flex-direction: column;
     background-color: #1e1e1e;
@@ -149,7 +162,14 @@ body{
     position: absolute;
     bottom: 105px;
     right: 24px;
-    
+    opacity: 0;
 }
+.play svg:hover{
+    opacity: 1;
+}
+.card:hover{
+    background-color: #282828
+}
+
 
  

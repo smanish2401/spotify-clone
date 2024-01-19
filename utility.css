@@ -26,3 +26,46 @@
     .p-1{
           padding: 20px;;
     }
+    /* Define scrollbar styles for Webkit browsers (Chrome, Safari, Opera) */
+::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #444; /* Set the color of the scrollbar thumb */
+    border-radius: 6px; /* Round the corners of the thumb */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #333; /* Set the color of the scrollbar track */
+  }
+  
+  /* Define scrollbar styles for Firefox */
+  /* Note: Firefox does not support styling the scrollbar thumb directly */
+  /* However, you can use a combination of background-color and border to achieve a similar effect */
+  /* This example uses a semi-transparent border to simulate a dark scrollbar thumb */
+  /* You can adjust the color and transparency as needed */
+  /* Note: Make sure to include the 'background-color' property to set the color of the scrollbar track in Firefox */
+  /* This example uses the same color as the scrollbar track in Webkit browsers */
+  * {
+    scrollbar-color: #444 #333;
+  }
+  
+  /* Define scrollbar styles for Edge and IE */
+  /* Note: Microsoft Edge and Internet Explorer use a different syntax for scrollbar styling */
+  /* The 'scrollbar-color' property is not supported in these browsers */
+  /* You can use the '-ms-' prefix for the individual properties */
+  
+  /* Set the color of the scrollbar thumb */
+  *::-ms-scrollbar-thumb {
+    background-color: #444;
+    border-radius: 6px;
+  }
+  
+  /* Set the color of the scrollbar track */
+  *::-ms-scrollbar-track {
+    background-color: #333;
+  }
+  
+  /* Optionally, you can adjust other scrollbar-related properties as needed */
+  
