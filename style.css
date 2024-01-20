@@ -50,9 +50,16 @@ body{
   
     
 }
+.songsList ul{
+    padding: 12px 42px;
+}
+.songsList ul li{
+    list-style: none;
+    list-style-type: decimal;
+}
 .library{
     
-    min-height: 58vh;
+    min-height: 60vh;
     position: relative;
 }
 
