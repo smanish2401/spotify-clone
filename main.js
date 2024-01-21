@@ -25,7 +25,7 @@ async function main() {
   console.log(songs)
   let songUl = document.querySelector('.songsList').getElementsByTagName('ul')[0];
   for (const song of songs) {
-    songUl.innerHTML = songUl.innerHTML + `<li>${song.replaceAll("%20", '')}</li>`
+    songUl.innerHTML = songUl.innerHTML +`<li>${song.replaceAll("%20", '')}</li>`
   }
 
   //play first song
