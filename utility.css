@@ -28,7 +28,7 @@
     }
     /* Define scrollbar styles for Webkit browsers (Chrome, Safari, Opera) */
 ::-webkit-scrollbar {
-    width: 12px; /* Set the width of the scrollbar */
+    width: 8px; /* Set the width of the scrollbar */
   }
   
   ::-webkit-scrollbar-thumb {

@@ -9,13 +9,13 @@ body{
 }
 
 .left{
-    width: 25vw;
+    width: 30vw;
   padding:7px;
   
     
 }
 .right{
-    width: 75vw;
+    width: 70vw;
     margin: 14px 0;
     position: relative;
     
@@ -50,13 +50,8 @@ body{
   
     
 }
-.songsList ul{
-    padding: 12px 42px;
-}
-.songsList ul li{
-    list-style: none;
-    list-style-type: decimal;
-}
+
+
 .library{
     
     min-height: 60vh;
@@ -194,5 +189,23 @@ body{
     background-color:white;
     padding: 8px;
     border-radius:50%;
+    cursor: pointer;
+}
+.songsList ul{
+    padding: 12px ;
+}
+
+.songsList ul li{
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    justify-content: space-between;
+    padding: 12px 0;
+}
+.songsList{
+    height: 300px;
+    
+    overflow-y: scroll;
+   
 }
  
