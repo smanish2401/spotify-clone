@@ -11,6 +11,7 @@ body{
 .left{
     width: 30vw;
   padding:7px;
+ 
   
     
 }
@@ -18,7 +19,7 @@ body{
     width: 70vw;
     margin: 14px 0;
     position: relative;
-    
+   
 }
 
 
@@ -54,7 +55,7 @@ body{
 
 .library{
     
-    min-height: 60vh;
+    min-height: 55vh;
     position: relative;
 }
 
@@ -176,7 +177,7 @@ body{
 }
 .playBar{
     padding:10px 0 ;
-    position: absolute;
+    position: fixed;
    
     bottom: 0;
     display: flex;
@@ -196,16 +197,38 @@ body{
 }
 
 .songsList ul li{
+    margin-top: 15px;
     list-style: none;
+    width:300px;
     display: flex;
+    align-items: center;
     gap: 15px;
     justify-content: space-between;
     padding: 12px 0;
+    background-color: #2a2727;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+.info{
+    
+    width: 200px;
+    display: flex;
+    
+    overflow:hidden;
 }
 .songsList{
-    height: 300px;
+    height: 250px;
     
-    overflow-y: scroll;
+    overflow: auto;
    
 }
- 
+.libraryPlyBtn{
+    background-color:#1fdf64;
+    padding: 8px;
+    border-radius:50%;
+    cursor: pointer;
+}
+.libraryPlyBtn:hover{
+    background-color: #24a854;
+}

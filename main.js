@@ -27,11 +27,11 @@ async function main() {
   for (const song of songs) {
     songUl.innerHTML = songUl.innerHTML +`
     <li>
-                            <img src="music-icon.svg" class="invert" alt=""></img>
+                            <img src="music-icon.svg" class="" alt=""></img>
                             <div class="info">
                             ${song.replaceAll("%20", '')}
                             </div>
-                            <img src="play btn.svg" class="playbtn" title="play now" alt="">
+                            <img src="play btn.svg" class="libraryPlyBtn" title="play now" alt="">
 
                             </img>                             
                         </li>`
