@@ -178,12 +178,12 @@ body{
 .playBar{
     padding:10px 0 ;
     position: fixed;
-   
+  
     bottom: 0;
     
     
 }
-.playButtons{
+.songButtons{
     display: flex;
     gap: 20px;
     justify-content: center;
@@ -239,18 +239,24 @@ body{
     background-color: #24a854;
 }
 .seekbar{
-    position: relative;
+  
     width: 98vw;
+    margin: 10px;
     display: flex;
     flex-wrap: wrap;
     height: 1vh;
     border: 1px solid;
+    border-radius: 10px;
    
 }
 .circle{
-    position: absolute;
-    width: 13px;
-    height: 13px ;
-    border-radius: 13px;
+    position: relative;
+    bottom: 3px;
+    left: 0%;
+    transition: 0.5s;
+    width: 12px;
+    height: 12px ;
+    border-radius: 12px;
     background-color: aliceblue;
 }
+
