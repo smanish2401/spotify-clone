@@ -9,14 +9,14 @@ body{
 }
 
 .left{
-    width: 30vw;
+    width: 28vw;
   padding:7px;
  
   
     
 }
 .right{
-    width: 70vw;
+    width: 72vw;
     margin: 14px 0;
     position: relative;
    
@@ -125,13 +125,14 @@ body{
 }
 .spotifyPlaylist{
     padding: 15px;
+    
 }
 .card-container{
     margin: 15px;
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
-    max-height: 60vh;
+    max-height: 57vh;
     overflow:auto;
 }
 
@@ -176,10 +177,10 @@ body{
     opacity: 1;
 }
 .playBar{
-    padding:10px 0 ;
+   
     position: fixed;
-  
-    bottom: 0;
+  top: 88vh;
+   
     
     
 }
@@ -190,6 +191,9 @@ body{
     width: 100vw;
     align-items: center;
     
+}
+.songButtons img{
+    cursor: pointer;
 }
 .playbtn{
     background-color:white;
@@ -204,7 +208,7 @@ body{
 .songsList ul li{
     margin-top: 15px;
     list-style: none;
-    width:300px;
+    width:290px;
     display: flex;
     align-items: center;
     gap: 15px;
@@ -229,14 +233,13 @@ body{
     overflow: auto;
    
 }
-.libraryPlyBtn{
-    background-color:#1fdf64;
-    padding: 8px;
-    border-radius:50%;
-    cursor: pointer;
+.songsList li:hover{
+background-color:  #484343;
+cursor: pointer;
 }
-.libraryPlyBtn:hover{
-    background-color: #24a854;
+
+.spt{
+    width: 35px;
 }
 .seekbar{
   
@@ -245,7 +248,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     height: 1vh;
-    border: 1px solid;
+    border: 1px solid #484343;
     border-radius: 10px;
    
 }
@@ -259,4 +262,20 @@ body{
     border-radius: 12px;
     background-color: aliceblue;
 }
+.songTime{
+    font-size: 12px;
+    margin-left: 20px;
+   
+}
+.songInfo{
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+}
 
+/*.libraryPlyBtn{
+    background-color:#1fdf64;
+    padding: 8px;
+    border-radius:50%;
+    cursor: pointer;
+}*/

@@ -47,7 +47,7 @@ async function main() {
                             </div>
                            
 
-                            <img src="play btn.svg" class="libraryPlyBtn" title="play now" alt="">
+                            <img src="favicon.ico" class="spt"  alt="">
 
                             </img> 
                                                       
