@@ -184,6 +184,9 @@ body{
     
     
 }
+.ppp{
+    display: flex;
+}
 .songButtons{
     display: flex;
     gap: 20px;
@@ -214,7 +217,7 @@ body{
     gap: 15px;
     justify-content: space-between;
     padding: 12px 0;
-    background-color: #2a2727;
+   
     border-radius: 7px;
     padding: 10px;
 }
@@ -239,40 +242,52 @@ cursor: pointer;
 }
 
 .spt{
-    width: 35px;
+    width: 30px;
 }
 .seekbar{
   
-    width: 98vw;
+    width: 40vw;
     margin: 10px;
     display: flex;
     flex-wrap: wrap;
-    height: 1vh;
-    border: 1px solid #484343;
-    border-radius: 10px;
+    height: 6px;
    
+    border-radius: 10px;
+ 
+   background-color: #484343;
 }
 .circle{
     position: relative;
-    bottom: 3px;
+    bottom: 4px;
     left: 0%;
     transition: 0.5s;
-    width: 12px;
-    height: 12px ;
-    border-radius: 12px;
+    width: 13px;
+    height: 13px ;
+    border-radius: 13px;
     background-color: aliceblue;
+}
+
+   
+
+.songInfo{
+    gap: 20px;
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 .songTime{
     font-size: 12px;
-    margin-left: 20px;
-   
+    
 }
-.songInfo{
-    position: absolute;
-    bottom: 50px;
-    left: 20px;
+.seekbar-play{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-
 /*.libraryPlyBtn{
     background-color:#1fdf64;
     padding: 8px;

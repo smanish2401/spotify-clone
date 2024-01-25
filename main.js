@@ -28,7 +28,7 @@ const playMusic = (track)=>{
   currentSong.play();
   
   play.src = 'pause-btn.svg'
-  document.querySelector(".songInfo").innerHTML = "track";
+  document.querySelector(".songInfo").innerHTML = '<img src ="m.svg"></img>'+ track 
   document.querySelector(".songTime").innerHTML =   '00:00/00:00'
 }
 async function main() {
