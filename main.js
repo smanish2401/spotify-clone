@@ -52,7 +52,7 @@ const playMusic = (track, pause = false) => {
 async function main() {
   //get all songs
   let songs = await getSongs();
-  playMusic(songs[0], true);
+  playMusic(songs[0],true);
   //console.log(songs)
   let songUl = document
     .querySelector(".songsList")
@@ -86,9 +86,11 @@ async function main() {
     if (currentSong.paused) {
       currentSong.play();
       play.src = "pause-btn.svg";
+      play.title = "pause"
     } else {
       currentSong.pause();
       play.src = "play btn.svg";
+      play.title ="play"
     }
   });
   currentSong.addEventListener("timeupdate", () => {
@@ -96,7 +98,13 @@ async function main() {
     document.querySelector(".songTime").innerHTML = `${secondsToMinutesSeconds(
       currentSong.currentTime
     )} / ${secondsToMinutesSeconds(currentSong.duration)}`;
+    document.querySelector(".circle").style.left = (currentSong.currentTime/currentSong.duration)*100 +"%"
   });
+  document.querySelector(".seekbar").addEventListener("click",(e)=>{
+    let percent = (e.offsetX/e.target.getBoundingClientRect().width)*100;
+    document.querySelector(".circle").style.left = percent + '%';
+    currentSong.currentTime = ((currentSong.duration)*percent)/100
+  })
 }
 
 main();

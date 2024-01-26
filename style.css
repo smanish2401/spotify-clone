@@ -250,20 +250,20 @@ cursor: pointer;
 .seekbar{
   
     width: 40vw;
-    margin: 10px;
+    margin: 10px 10px 5px;
     display: flex;
     flex-wrap: wrap;
     height: 6px;
-   
+    padding: 0 12px 0px 0px;
     border-radius: 10px;
- 
+ cursor: pointer;
    background-color: #484343;
 }
 .circle{
     position: relative;
     bottom: 4px;
     left: 0%;
-    transition: 0.5s;
+    transition: 0.3s;
     width: 13px;
     height: 13px ;
     border-radius: 13px;
