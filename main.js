@@ -1,5 +1,6 @@
 console.log("hello spotify");
 let currentSong = new Audio();
+
 function secondsToMinutesSeconds(totalSeconds) {
   // Calculate minutes and remaining seconds
   var minutes = Math.floor(totalSeconds / 60);
@@ -14,6 +15,7 @@ function secondsToMinutesSeconds(totalSeconds) {
 
   return result;
 }
+
 async function getSongs() {
   let a = await fetch("http://127.0.0.1:5500/songs/");
   let response = await a.text();
@@ -40,11 +42,12 @@ const playMusic = (track, pause = false) => {
   if (!pause) {
     currentSong.play();
     play.src = "pause-btn.svg";
+   
   }
 
   document.querySelector(".songInfo").innerHTML =
     '<img src ="m.svg"></img>' + decodeURI(track);
-  document.querySelector(".songTime").innerHTML = "00:00/00:00";
+  document.querySelector(".songTime").innerHTML = "00:00 / 00:00";
 };
 async function main() {
   //get all songs
@@ -65,7 +68,7 @@ async function main() {
                             </div>
                            
 
-                            <img src="favicon.ico" class="spt"  alt="">
+                            <img src="favicon.ico" class="spt"   alt="">
 
                             </img> 
                                                       

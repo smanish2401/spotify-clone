@@ -204,6 +204,9 @@ body{
     border-radius:50%;
     cursor: pointer;
 }
+.extrabtn{
+    opacity: 0.4;
+}
 .songsList ul{
     padding: 12px ;
 }
