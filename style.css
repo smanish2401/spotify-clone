@@ -132,10 +132,9 @@ body{
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
-    max-height: 57vh;
+   min-height: 50vh;
     overflow:auto;
 }
-
 .card{
     margin-top: 15px;
     padding:15px;
@@ -179,7 +178,9 @@ body{
 .playBar{
    
     position: fixed;
-  top: 88vh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
    
     
     
@@ -249,7 +250,7 @@ cursor: pointer;
 }
 .seekbar{
   
-    width: 40vw;
+    width: 90%;
     margin: 10px 10px 5px;
     display: flex;
     flex-wrap: wrap;
@@ -272,7 +273,7 @@ cursor: pointer;
 
    
 
-.songInfo{
+.songInf{
     gap: 20px;
     display: flex;
     position: absolute;
@@ -282,15 +283,12 @@ cursor: pointer;
     flex-wrap: wrap;
     overflow: hidden;
 }
+
 .songTime{
     font-size: 12px;
     
 }
-.seekbar-play{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 /*.libraryPlyBtn{
     background-color:#1fdf64;
     padding: 8px;
