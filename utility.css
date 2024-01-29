@@ -3,6 +3,32 @@
    
     
 }
+/* Apply the color-scheme property to the root element */
+:root {
+  color-scheme: dark;
+}
+
+/* Use the ::-webkit-scrollbar pseudo-element to style the scrollbar */
+::-webkit-scrollbar {
+  height: 7px; /* Set the height of the scrollbar */
+}
+
+/* Use the ::-webkit-scrollbar-track pseudo-element to style the track */
+::-webkit-scrollbar-track {
+  background: #333; /* Set the track color */
+}
+
+/* Use the ::-webkit-scrollbar-thumb pseudo-element to style the thumb */
+::-webkit-scrollbar-thumb {
+  background: #666; /* Set the thumb color */
+  border-radius: 5px; /* Add some round corners */
+}
+
+/* Use the ::-webkit-scrollbar-thumb:hover pseudo-element to style the thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #999; /* Change the thumb color on hover */
+}
+
 .flex{
     display: flex;
 }

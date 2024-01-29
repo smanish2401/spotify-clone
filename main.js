@@ -19,9 +19,10 @@ function secondsToMinutesSeconds(totalSeconds) {
 async function getSongs() {
   let a = await fetch("http://127.0.0.1:5500/songs/");
   let response = await a.text();
-  //console.log(response);
+  //console.log("kamal",response);
   let div = document.createElement("div");
   div.innerHTML = response;
+
   let as = div.getElementsByTagName("a");
   //console.warn(as)
   let songs = [];

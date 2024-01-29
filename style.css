@@ -83,6 +83,7 @@ body{
     display: flex;
     justify-content: space-between;
     background-color:#090909;
+    align-items: center;
 }
 .header > *{
     padding: 15px;
@@ -92,6 +93,7 @@ body{
     opacity: .6;
     padding: 7px;
     border-radius: 50%;
+   
 }
 
 
@@ -103,7 +105,7 @@ body{
     font-size: 15px;
     font-weight: 700;
     cursor: pointer;
-    
+    color: #090909;
 }
 .lg-btn:hover{
     font-size: 16px;
@@ -178,18 +180,16 @@ body{
 .playBar{
    
     
-        display: flex;
-        justify-content: center;
-        align-items: center;
+       
         position: fixed;
-        bottom: 20px;
+        bottom: 0px;
         
-        background: #2c2929;
+      
         border-radius: 10px;
-        width: 90;
-        padding: 12px;
-        width: 65vw;
-        min-height: 40px;
+      
+        padding: 2px;
+       
+       
     }
     
     
@@ -203,7 +203,7 @@ body{
     justify-content: center;
     width: 100vw;
     align-items: center;
-    
+    margin: 10px;
 }
 .songButtons img{
     cursor: pointer;
@@ -259,17 +259,17 @@ cursor: pointer;
 }
 .seekbar {
     height: 4px;
-    width: 98%;
-    background: black;
+    width: 85%;
+    background: rgb(51, 49, 49);
     border-radius: 10px;
     position: absolute;
-    bottom: 8px;
+    bottom: 12px;
     margin: 6px;
     cursor: pointer;
 }
 .circle{
     position: relative;
-    bottom: 4px;
+    bottom: 5px;
     left: 0%;
     transition: 0.3s;
     width: 13px;
@@ -277,29 +277,95 @@ cursor: pointer;
     border-radius: 13px;
     background-color: aliceblue;
 }
-
+.seek{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
    
 
-.songInf{
-    gap: 20px;
-    display: flex;
-    position: absolute;
-    top: 10px;
-    left: 20px;
-  
-    flex-wrap: wrap;
-    overflow: hidden;
+.songInfo{
+    
+        display: flex;
+       
+        /* background-color: #3f3f45; */
+        border-radius: 5px;
+        padding: 5px;
+        position: absolute;
+        top: 0px;
+        gap: 5px;
+        width: 237px;
+        overflow: hidden;
+        font-size: smaller;
 }
 
 .songTime{
     font-size: 12px;
     
 }
-.aboveBar {
+.hamburger{
+    display: none;
+}
+.hamContainer img {
+    display: none;
+}
+.hamContainer{
     display: flex;
-    justify-content: space-around;
-    margin:10px 0;
-    width: 100%;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width:900px) {
+    .songInfo{
+        
+    display: flex;
+    /* background-color: #3f3f45; */
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    top: -48px;
+   
+    gap: 5px;
+    width: 237px;
+    overflow: hidden;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamContainer img{
+        display: block;
+       
+    }
+   .nav svg{
+    display: none;
+   }
+ 
+   
+    .right{
+        width: 100%;
+       }
+
+    .left {
+        position: absolute;
+        left: -130%;
+        transition: all .3s;
+        z-index: 1;
+        width: 373px;
+        background-color: black;
+        padding: 0;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        
+    };
+    
+    
+   
+   @media (max-width:500px) {
+    .card{
+        width: 100px;
+    }
+   }
 }
 
 /*.libraryPlyBtn{
