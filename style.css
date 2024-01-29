@@ -132,7 +132,7 @@ body{
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
-   min-height: 50vh;
+   max-height: 50vh;
     overflow:auto;
 }
 .card{
@@ -177,14 +177,23 @@ body{
 }
 .playBar{
    
-    position: fixed;
- display: flex;
- justify-content: center;
- align-items: center;
-   
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 20px;
+        
+        background: #2c2929;
+        border-radius: 10px;
+        width: 90;
+        padding: 12px;
+        width: 65vw;
+        min-height: 40px;
+    }
     
     
-}
+
 .ppp{
     display: flex;
 }
@@ -248,17 +257,15 @@ cursor: pointer;
 .spt{
     width: 30px;
 }
-.seekbar{
-  
-    width: 90%;
-    margin: 10px 10px 5px;
-    display: flex;
-    flex-wrap: wrap;
-    height: 6px;
-    padding: 0 12px 0px 0px;
+.seekbar {
+    height: 4px;
+    width: 98%;
+    background: black;
     border-radius: 10px;
- cursor: pointer;
-   background-color: #484343;
+    position: absolute;
+    bottom: 8px;
+    margin: 6px;
+    cursor: pointer;
 }
 .circle{
     position: relative;
@@ -287,6 +294,12 @@ cursor: pointer;
 .songTime{
     font-size: 12px;
     
+}
+.aboveBar {
+    display: flex;
+    justify-content: space-around;
+    margin:10px 0;
+    width: 100%;
 }
 
 /*.libraryPlyBtn{
