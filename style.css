@@ -311,7 +311,7 @@ cursor: pointer;
 }
 .hamContainer{
     display: flex;
-    gap: 50px;
+    gap: 20px;
     justify-content: center;
     align-items: center;
 }
@@ -358,15 +358,22 @@ cursor: pointer;
         top: 0;
         
     };
-    
+}
     
    
    @media (max-width:500px) {
     .card{
         width: 100px;
     }
+    .lg-btn{
+        padding: 5px 12px;
+        font-size: 13px;
+    }
+    .sg-btn{
+        font-size: 13px;
+    }
    }
-}
+
 
 /*.libraryPlyBtn{
     background-color:#1fdf64;
