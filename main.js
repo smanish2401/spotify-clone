@@ -119,17 +119,20 @@ async function main() {
     console.log("previous clicked")
     let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0])
     console.log(songs,index);
-    if(index-1 >= 0){
+    if((index - 1) >= 0){
       playMusic(songs[index - 1])
     }
   })
    //add event listener for next btn
   next.addEventListener("click",()=>{
+    currentSong.pause()
     console.log("next clicked")
     let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0])
     console.log(songs,index);
-    if(index+1 > length){
+    if((index+1) < songs.length){
       playMusic(songs[index + 1])
+    }else{
+
     }
    
   })

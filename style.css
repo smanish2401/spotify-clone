@@ -186,11 +186,7 @@ body{
     width: 100%;
     }
     
-    
 
-.ppp{
-    display: flex;
-}
 .songButtons{
     display: flex;
     gap: 20px;
@@ -211,6 +207,9 @@ body{
 .extrabtn{
     opacity: 0.4;
 }
+.volume:hover::after{
+content: "";
+}
 .songsList ul{
     padding: 12px ;
 }
@@ -230,7 +229,7 @@ body{
 }
 
 .info{
-    
+    word-break: break-all;
     width: 200px;
     display: flex;
     
@@ -282,7 +281,7 @@ cursor: pointer;
 .songInfo{
     
         display: flex;
-       
+       word-break: break-all;
         /* background-color: #3f3f45; */
         border-radius: 5px;
         padding: 5px;
