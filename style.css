@@ -178,18 +178,12 @@ body{
     opacity: 1;
 }
 .playBar{
-   
-    
-       
-        position: fixed;
-        bottom: 0px;
-        
-      
-        border-radius: 10px;
-      
-        padding: 2px;
-       
-       
+    position: fixed;
+    bottom: 0px;
+    border-radius: 10px;
+    padding: 0px;
+    background: #393030;
+    width: 100%;
     }
     
     
@@ -227,8 +221,8 @@ body{
     width:290px;
     display: flex;
     align-items: center;
-    gap: 15px;
-    justify-content: space-between;
+    gap: 20px;
+   
     padding: 12px 0;
    
     border-radius: 7px;
@@ -246,7 +240,8 @@ body{
     margin-top: 10px;
     height: 250px;
     
-    overflow: auto;
+    overflow-x: hidden;
+    
    
 }
 .songsList li:hover{
@@ -260,7 +255,7 @@ cursor: pointer;
 .seekbar {
     height: 4px;
     width: 85%;
-    background: rgb(51, 49, 49);
+    background: rgb(108, 102, 102);
     border-radius: 10px;
     position: absolute;
     bottom: 12px;
@@ -316,6 +311,10 @@ cursor: pointer;
     align-items: center;
     
 }
+.close img{
+    display: none;
+}
+
 @media (max-width:900px) {
     .songInfo{
         
@@ -358,14 +357,23 @@ cursor: pointer;
         position: fixed;
         top: 0;
         
-    };
+    }
+    .close img{
+        display: block;
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    width: 30px;
+    cursor: pointer;
+   }
+   .card{
+    width: 100%;
+}
 }
     
    
    @media (max-width:500px) {
-    .card{
-        width: 100px;
-    }
+    
     .lg-btn{
         padding: 5px 12px;
         font-size: 13px;
@@ -373,8 +381,8 @@ cursor: pointer;
     .sg-btn{
         font-size: 13px;
     }
-   }
-
+    
+}
 
 /*.libraryPlyBtn{
     background-color:#1fdf64;

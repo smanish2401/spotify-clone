@@ -3,6 +3,9 @@ let currentSong = new Audio();
 
 function secondsToMinutesSeconds(totalSeconds) {
   // Calculate minutes and remaining seconds
+  if(isNaN(totalSeconds) || totalSeconds<0 ){
+    return "00:00"
+  }
   var minutes = Math.floor(totalSeconds / 60);
   var seconds = Math.floor(totalSeconds % 60);
 
@@ -69,9 +72,7 @@ async function main() {
                             </div>
                            
 
-                            <img src="favicon.ico" class="spt"   alt="">
-
-                            </img> 
+                           
                                                       
                         </li>`;
   }
@@ -105,6 +106,32 @@ async function main() {
     let percent = (e.offsetX/e.target.getBoundingClientRect().width)*100;
     document.querySelector(".circle").style.left = percent + '%';
     currentSong.currentTime = ((currentSong.duration)*percent)/100
+  })
+  document.querySelector(".hamburger").addEventListener("click",()=>{
+    document.querySelector(".left").style.left = "0"
+  })
+  //add event listener for close button
+  document.querySelector(".close").addEventListener("click",()=>{
+    document.querySelector(".left").style.left = "-130%"
+  })
+  //add event listener for previous btn
+  previous.addEventListener("click",()=>{
+    console.log("previous clicked")
+    let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0])
+    console.log(songs,index);
+    if(index-1 >= 0){
+      playMusic(songs[index - 1])
+    }
+  })
+   //add event listener for next btn
+  next.addEventListener("click",()=>{
+    console.log("next clicked")
+    let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0])
+    console.log(songs,index);
+    if(index+1 > length){
+      playMusic(songs[index + 1])
+    }
+   
   })
 }
 
