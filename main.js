@@ -19,6 +19,7 @@ function secondsToMinutesSeconds(totalSeconds) {
   return result;
 }
 
+
 async function getSongs() {
   let a = await fetch("http://127.0.0.1:5500/songs/");
   let response = await a.text();
@@ -100,12 +101,17 @@ async function main() {
     document.querySelector(".songTime").innerHTML = `${secondsToMinutesSeconds(
       currentSong.currentTime
     )} / ${secondsToMinutesSeconds(currentSong.duration)}`;
-    document.querySelector(".circle").style.left = (currentSong.currentTime/currentSong.duration)*100 +"%"
+   let value = document.querySelector(".circle").style.left = (currentSong.currentTime/currentSong.duration)*100 +"%";
+    document.querySelector("#seekbar-fill").style.width = value 
   });
   document.querySelector(".seekbar").addEventListener("click",(e)=>{
     let percent = (e.offsetX/e.target.getBoundingClientRect().width)*100;
     document.querySelector(".circle").style.left = percent + '%';
-    currentSong.currentTime = ((currentSong.duration)*percent)/100
+   
+    currentSong.currentTime = ((currentSong.duration)*percent)/100;
+   
+    
+
   })
   document.querySelector(".hamburger").addEventListener("click",()=>{
     document.querySelector(".left").style.left = "0"
@@ -136,6 +142,7 @@ async function main() {
     }
    
   })
+ 
 }
 
 main();

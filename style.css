@@ -17,7 +17,7 @@ body{
 }
 .right{
     width: 72vw;
-    margin: 14px 0;
+    margin: 12px 0;
     position: relative;
    
 }
@@ -181,7 +181,7 @@ body{
     position: fixed;
     bottom: 0px;
     border-radius: 10px;
-    padding: 0px;
+    padding: 2px;
     background: #393030;
     width: 100%;
     }
@@ -207,8 +207,14 @@ body{
 .extrabtn{
     opacity: 0.4;
 }
-.volume:hover::after{
-content: "";
+.volume{
+
+    display: flex;
+   flex-direction: column;
+   width: 20px;
+}
+.volume input{
+    width: 66px;
 }
 .songsList ul{
     padding: 12px ;
@@ -251,6 +257,11 @@ cursor: pointer;
 .spt{
     width: 30px;
 }
+.seek{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .seekbar {
     height: 4px;
     width: 85%;
@@ -271,11 +282,18 @@ cursor: pointer;
     border-radius: 13px;
     background-color: aliceblue;
 }
-.seek{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#seekbar-fill {
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #ddd;
+    position: absolute;
+    top: 0;
+    left: 0;
+     /* Initial fill percentage */
+      /* Smooth transition for fill */
 }
+
    
 
 .songInfo{
@@ -382,6 +400,12 @@ cursor: pointer;
     }
     
 }
+@media (max-width:370px) {
+    .volume{
+        display: none;
+    }
+}
+
 
 /*.libraryPlyBtn{
     background-color:#1fdf64;
