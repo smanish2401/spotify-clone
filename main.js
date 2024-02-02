@@ -43,12 +43,12 @@ async function getSongs() {
 }
 const playMusic = (track, pause = false) => {
   // let audio = new Audio("/songs/"+track);
-  currentSong.src = "/songs/" + track;
+  currentSong.src = "/songs/" + track; 
+ 
   if (!pause) {
     currentSong.play();
     play.src = "pause-btn.svg";
-   
-  }
+}
 
   document.querySelector(".songInfo").innerHTML =
     '<img src ="m.svg"></img>' + decodeURI(track);
@@ -68,7 +68,7 @@ async function main() {
       songUl.innerHTML +
       ` <li>
                             <img src="music-icon.svg" class="" alt=""></img>
-                            <div class="info">
+                            <div class="info" id="songInfo">
                             ${song.replaceAll("%20", " ")}
                             </div>
                            
@@ -83,17 +83,21 @@ async function main() {
     e.addEventListener("click", (element) => {
       console.log(e.querySelector(".info").innerHTML);
       playMusic(e.querySelector(".info").innerHTML.trim());
+     
     });
   });
   play.addEventListener("click", () => {
     if (currentSong.paused) {
       currentSong.play();
       play.src = "pause-btn.svg";
-      play.title = "pause"
+      play.title = "pause";
+     
     } else {
       currentSong.pause();
       play.src = "play btn.svg";
       play.title ="play"
+     
+     
     }
   });
   currentSong.addEventListener("timeupdate", () => {
@@ -105,7 +109,7 @@ async function main() {
     document.querySelector("#seekbar-fill").style.width = value 
   });
   document.querySelector(".seekbar").addEventListener("click",(e)=>{
-    let percent = (e.offsetX/e.target.getBoundingClientRect().width)*100;
+    let percent = (e.offsetX / e.target.getBoundingClientRect().width)*100;
     document.querySelector(".circle").style.left = percent + '%';
    
     currentSong.currentTime = ((currentSong.duration)*percent)/100;
@@ -134,16 +138,22 @@ async function main() {
     currentSong.pause()
     console.log("next clicked")
     let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0])
-    console.log(songs,index);
+    //console.log(songs,index);
     if((index+1) < songs.length){
       playMusic(songs[index + 1])
-    }else{
-
     }
    
   })
- 
-}
+
+  // add event listenr for volume
+  document.getElementById("range").addEventListener("change",(e)=>{
+   console.log("setting volume to",e.target.value,"/100");
+    currentSong.volume = parseInt(e.target.value)/100;
+    range.title = parseInt(e.target.value)+"%"
+  })
+  
+  
+ }
 
 main();
 
