@@ -148,8 +148,19 @@ async function main() {
   // add event listenr for volume
   document.getElementById("range").addEventListener("change",(e)=>{
    console.log("setting volume to",e.target.value,"/100");
-    currentSong.volume = parseInt(e.target.value)/100;
-    range.title = parseInt(e.target.value)+"%"
+   currentSong.volume = parseInt(e.target.value)/100;
+    //range.title = parseInt(e.target.value)+"%";
+    
+  })
+  document.getElementById("vol").addEventListener("click",()=>{
+    currentSong.muted = !currentSong.muted;
+    if(currentSong.muted){
+      vol.src = "volume-off.svg";
+      vol.title = "Unmute"
+    }else{
+      vol.src = "volume.svg"
+      vol.title = "Mute"
+    }
   })
   
   
