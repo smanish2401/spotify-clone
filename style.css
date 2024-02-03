@@ -3,6 +3,9 @@
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+:root{
+    --a:0;
+}
 body{
     background-color: black;
     color: white;
@@ -147,11 +150,13 @@ body{
     gap: 12px;
     justify-content: center;
     position: relative;
+    transition: all 0.4s;
    
    
 }
 .card:hover{
-    background-color: #282828
+    background-color: #282828;
+    --a : 1;
 }
 
 .card p{
@@ -172,11 +177,10 @@ body{
     position: absolute;
     bottom: 105px;
     right: 24px;
-    opacity: 0;
+    opacity: var(--a);
+    cursor: pointer;
 }
-.play svg:hover{
-    opacity: 1;
-}
+
 .playBar{
     position: fixed;
     bottom: 0px;
