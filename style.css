@@ -58,7 +58,7 @@ body{
 
 .library{
     
-    min-height: 55vh;
+    min-height: 53vh;
     position: relative;
 }
 
@@ -151,6 +151,7 @@ body{
     justify-content: center;
     position: relative;
     transition: all 0.4s;
+    cursor: pointer;
    
    
 }
@@ -198,7 +199,7 @@ body{
     justify-content: center;
     width: 100%;
     align-items: center;
-    margin-bottom: 13px;
+    margin-bottom: 25px;
     
     margin-top: 6px;
 
@@ -233,9 +234,9 @@ input[type="range"]:hover{
     accent-color: #1fdf64;
 }
 
-.songsList ul{
+/* .songsList ul{
     padding: 12px ;
-}
+} */
 
 .songsList ul li{
     margin-top: 15px;
