@@ -133,11 +133,11 @@ body{
     
 }
 .card-container{
-    margin: 15px;
+    margin: 2px;
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
-   max-height: 50vh;
+   max-height: 58vh;
     overflow:auto;
 }
 .card{
@@ -261,9 +261,10 @@ input[type="range"]:hover{
 }
 .songsList{
     margin-top: 10px;
-    height: 250px;
-    
+    height: 220px;
     overflow-x: hidden;
+    background-color: #1a1919;
+    border-radius: 8px;
     
    
 }
