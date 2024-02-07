@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Taoma, Geneva, Verdana, sans-serif;
 }
 :root{
     --a:0;
@@ -190,6 +190,7 @@ body{
     background: rgb(47 39 39);
     width: 100%;
     padding-top: 5px;
+    margin-bottom: 2px;
     }
     
 
@@ -331,6 +332,8 @@ cursor: pointer;
         height: 30px;
         overflow: hidden;
         font-size: smaller;
+        font-weight: 400;
+        color: #11e117;
 }
 
 .songTime{
@@ -436,7 +439,14 @@ cursor: pointer;
     .sg-btn{
         font-size: 13px;
     }
-    
+    .card-container{
+    margin: 2px;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    max-height: 60vh;
+    overflow: auto;
+    }
 }
 
 

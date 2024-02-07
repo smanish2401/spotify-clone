@@ -77,25 +77,7 @@ const playMusic = (track, pause = false) => {
     '<img src ="m.svg"></img>' + decodeURI(track);
   document.querySelector(".songTime").innerHTML = "00:00 / 00:00";
 };
-previous.addEventListener("click", () => {
-  console.log("previous clicked")
-  let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0])
-  console.log(songs, index);
-  if ((index - 1) >= 0) {
-    playMusic(songs[index - 1])
-  }
-})
-//add event listener for next btn
-next.addEventListener("click", () => {
-  currentSong.pause()
-  console.log("next clicked")
-  let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0])
-  //console.log(songs,index);
-  if ((index + 1) < songs.length) {
-    playMusic(songs[index + 1])
-  }
 
-})
 async function main() {
   //get all songs
   await getSongs('songs/ncs');
@@ -142,7 +124,25 @@ async function main() {
     document.querySelector(".left").style.left = "-130%"
   })
   //add event listener for previous btn
- 
+  previous.addEventListener("click", () => {
+    console.log("previous clicked")
+    let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0])
+    console.log(songs, index);
+    if ((index - 1) >= 0) {
+      playMusic(songs[index - 1])
+    }
+  })
+  //add event listener for next btn
+  next.addEventListener("click", () => {
+    currentSong.pause()
+    console.log("next clicked")
+    let index = songs.indexOf(currentSong.src.split("/").slice(-1)[0])
+    //console.log(songs,index);
+    if ((index + 1) < songs.length) {
+      playMusic(songs[index + 1])
+    }
+  
+  })
 
   // add event listener for volume
   document.getElementById("range").addEventListener("change", (e) => {
