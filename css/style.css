@@ -137,7 +137,7 @@ body{
     display: flex;
     gap: 25px;
     flex-wrap: wrap;
-   max-height: 58vh;
+   max-height: 50vh;
     overflow:auto;
 }
 .card{
@@ -218,7 +218,7 @@ body{
     opacity: 0.4;
 }
 .volume{
-
+    
     display: flex;
    align-items: center;
     gap: 5px;
@@ -342,6 +342,7 @@ cursor: pointer;
 }
 .hamburger{
     display: none;
+    cursor: pointer;
 }
 .hamContainer img {
     display: none;
@@ -446,6 +447,11 @@ cursor: pointer;
     flex-wrap: wrap;
     max-height: 60vh;
     overflow: auto;
+    }
+}
+@media(max-width:360px){
+    .volume{
+        opacity: 0;
     }
 }
 

@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Spotify - Web Player: Music for everyone</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
     <link rel="icon" href="favicon.ico">
 
 </head>
@@ -15,18 +15,18 @@
     <div class="container flex bg-black">
         <div class="left ">
             <div class="close">
-                <img src="close.svg" class="invert">
+                <img src="img/close.svg" class="invert">
             </div>
             <div class="home bg-grey rounded m-1 p-1">
-                <div class="logo"><img class="invert" src="logo.svg" width="100px" alt=""></div>
+                <div class="logo"><img class="invert" src="img/logo.svg" width="100px" alt=""></div>
                 <ul>
-                    <li><img class="invert" src="home.svg" alt="">Home</li>
-                    <li><img class="invert" src="search.svg" alt="">Search</li>
+                    <li><img class="invert" src="img/home.svg" alt="">Home</li>
+                    <li><img class="invert" src="img/search.svg" alt="">Search</li>
                 </ul>
             </div>
             <div class="library bg-grey rounded m-1 p-1">
                 <div class="heading ">
-                    <img src="library.svg" class="invert" alt="" srcset="">
+                    <img src="img/library.svg" class="invert" alt="" srcset="">
                     <p>Your Library</p>
 
 
@@ -59,9 +59,9 @@
                     <div class="hamContainer">
 
                         <div class="hamburger">
-                            <img src="side-bar.svg" alt="">
+                            <img src="img/side-bar.svg" alt="">
                         </div>
-                        <img class="invert" src="logo.svg" sty alt="">
+                        <img class="invert" src="img/logo.svg" sty alt="">
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" height="20" width="20" viewBox="0 0 320 512">
                         <path
@@ -82,72 +82,7 @@
             <div class="spotifyPlaylist">
                 <h2 style="margin-bottom: 10px;">Spotify Playlists</h2>
                 <div class="card-container rounded">
-                    <div class="card  rounded" data-folder="ncs">
-                        <div class="play">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" fill="black" height="24"
-                                viewBox="0 0 24 24" fill="none" class="injected-svg"
-                                data-src="/icons/play-stroke-sharp.svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                role="img" color="#000000">
-                                <path d="M5 20V4L19 12L5 20Z" stroke="#000000" stroke-width="1.5"
-                                    stroke-linejoin="round"></path>
-                            </svg>
-                            
-                        </div>
-
-                        <img src="https://i.scdn.co/image/ab67706f000000028aa213d23c60645e2649a350">
-                        <h4>Mega Hits Mix</h4>
-                        <p>A mega mix of favorites song for you...</p>
-
-                    </div>
-                    <div class="card  rounded" data-folder="cs" >
-                        <div class="play">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" fill="black" height="24"
-                                viewBox="0 0 24 24" fill="none" class="injected-svg"
-                                data-src="/icons/play-stroke-sharp.svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                role="img" color="#000000">
-                                <path d="M5 20V4L19 12L5 20Z" stroke="#000000" stroke-width="1.5"
-                                    stroke-linejoin="round"></path>
-                            </svg>
-                            
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037" alt="">
-                        <h4>lofi beats</h4>
-                        <p>chill beats, lofi vibes new tracks every...</p>
-
-                    </div>
-                    <div class="card  rounded" data-folder="cs" >
-                        <div class="play">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" fill="black" height="24"
-                                viewBox="0 0 24 24" fill="none" class="injected-svg"
-                                data-src="/icons/play-stroke-sharp.svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                role="img" color="#000000">
-                                <path d="M5 20V4L19 12L5 20Z" stroke="#000000" stroke-width="1.5"
-                                    stroke-linejoin="round"></path>
-                            </svg>
-                            
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67706f0000000215a41ffcf6a9fd1ed7f15ccc" alt="">
-                        <h4>Mellow Lofi Morning</h4>
-                        <p>Lead-back beats for an easy going morning</p>
-
-                    </div>
-                    <div class="card  rounded" data-folder="cs" >
-                        <div class="play">
-                            
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" fill="black" height="24"
-                                viewBox="0 0 24 24" fill="none" class="injected-svg"
-                                data-src="/icons/play-stroke-sharp.svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                role="img" color="#000000">
-                                <path d="M5 20V4L19 12L5 20Z" stroke="#000000" stroke-width="1.5"
-                                    stroke-linejoin="round"></path>
-                            </svg> 
-                            
-                        </div>
-                        <img src="https://i.scdn.co/image/ab67706f00000002bd0e19e810bb4b55ab164a95" alt="">
-                        <h4>Mood Booster</h4>
-                        <p>Get happy with todays dose with good songs</p>
-
-                    </div>
+                   
                   
                 </div>
                
@@ -166,13 +101,13 @@
 
             <div class="songButtons">
 
-                <img class="extrabtn" src="suffle.svg" alt="">
-                <img src="prev btn.svg" title="prev" id="previous" alt="">
-                <img class="playbtn" id="play" title="play" src="play btn.svg" alt="">
-                <img class="nxtbtn" id="next" title="next" src="nxt btn.svg" alt="">
+                <img class="extrabtn" src="img/suffle.svg" alt="">
+                <img src="img/prev btn.svg" title="prev" id="previous" alt="">
+                <img class="playbtn" id="play" title="play" src="img/play btn.svg" alt="">
+                <img class="nxtbtn" id="next" title="next" src="img/nxt btn.svg" alt="">
 
                 <div class="volume">
-                    <img src="volume.svg" id="vol" alt="">
+                    <img src="img/volume.svg" id="vol" alt="">
 
                     <input type="range" id="range">
 
@@ -201,7 +136,7 @@
 
 
         </div>
-        <script src="main.js"></script>
+        <script src="js/main.js"></script>
 </body>
 
 </html>
