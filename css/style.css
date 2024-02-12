@@ -479,7 +479,9 @@ input[type="range"]:hover {
     .card {
         width: 100%
     }
-
+    input[type="range"] {
+        accent-color: #1fdf64;
+    }
     .lg-btn {
         padding: 5px 12px;
         font-size: 13px;
@@ -494,7 +496,7 @@ input[type="range"]:hover {
         display: flex;
         gap: 25px;
         flex-wrap: wrap;
-        max-height: 52vh;
+        max-height: 54vh;
         overflow: auto;
         padding-bottom: 30px;
     }
