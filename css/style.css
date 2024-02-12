@@ -494,9 +494,9 @@ input[type="range"]:hover {
         display: flex;
         gap: 25px;
         flex-wrap: wrap;
-        max-height: 54vh;
+        max-height: 52vh;
         overflow: auto;
-        padding-bottom: 24px;
+        padding-bottom: 30px;
     }
 }
 
